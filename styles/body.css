@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 0px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  height: 300px;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
