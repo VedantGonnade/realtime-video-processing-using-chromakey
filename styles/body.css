@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-evenly;
   column-gap: 0px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+
 }
 
 .column {
@@ -11,7 +16,10 @@
 }
 
 .footer {
-  text-align: center;
+  /* text-align: center; */
+  position: absolute;
+  bottom: 10%;
+  left: 50%
 }
 
 @media (max-width: 600px) {
