@@ -1,4 +1,4 @@
-.body {
+.container {
   position: relative;
   height: 90vh; /* Set the body height to 100% of the viewport height */
   display: flex;
