@@ -1,12 +1,19 @@
+.body {
+  position: relative;
+  height: 90vh; /* Set the body height to 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
 .row {
   display: flex;
   justify-content: space-evenly;
   column-gap: 0px;
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 0;
   left: 0;
-
+  flex: 1;
 }
 
 .column {
@@ -16,10 +23,7 @@
 }
 
 .footer {
-  /* text-align: center; */
-  position: absolute;
-  bottom: 10%;
-  left: 50%
+  margin-top: auto;
 }
 
 @media (max-width: 600px) {
