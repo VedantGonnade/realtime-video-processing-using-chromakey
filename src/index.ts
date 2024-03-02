@@ -4,7 +4,7 @@ if (!canvasSecondElement) {
   throw new Error("#c1 element not found");
 }
 
-const canvasSecondElementContext = canvasSecondElement.getContext("2d")!;
+const canvasSecondElementContext: CanvasRenderingContext2D = canvasSecondElement.getContext("2d")!;
 
 if (!canvasSecondElementContext) {
   throw new Error("context cannot be added to the second canvas");
