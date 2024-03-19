@@ -4,20 +4,15 @@ export async function runMediaStream() {
   if (!videoElement) {
     throw new Error("#v1 element not found");
   }
+  console.log(videoElement)
 
-  if (
-    "enumerateDevices" in navigator &&
-    "getUserMedia" in navigator.mediaDevices
-  ) {
+  if ("getUserMedia" in navigator.mediaDevices) {
     const stream: MediaStream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: "user" },
-    });
-
+      video: true
+    })
     videoElement.srcObject = stream;
-
-  } else {
-    throw new Error("mediaDevice Api error", {
-      cause: "getUserMedia Api call is not present",
-    });
+  }
+  else {
+    console.log("error")
   }
 }
