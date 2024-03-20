@@ -1,8 +1,7 @@
-import { runCanvas } from "./modules/canvasRight";
-import { runMediaStream } from "./modules/mediaStream";
-import { fillCanvas } from "./modules/canvasLeft";
+import { runCanvas } from "./modules/finalCanvas";
+import { runMediaStream } from "./modules/streamVideo";
+import { drawVideo } from "./modules/drawVideo";
 
 runCanvas();
-const stream = await runMediaStream();
-fillCanvas(stream);
-
+await runMediaStream();
+drawVideo();
